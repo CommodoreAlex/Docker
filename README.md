@@ -61,4 +61,15 @@ Below is a breakdown of the topics covered and the corresponding files/folders i
      - Tips for diagnosing and resolving common Docker issues.
      - Best practices for security, performance, and resource management.
 
+### 8. **Working in Offline Environments** 🌐❌
+   - **File:**
+     - [offline_environments.md](offline-environments.md)
+   - **Overview:**
+     - This discussion section addresses the challenges and solutions for working with Docker in environments that are isolated from the internet. 
+     - Key topics covered include:
+       - Managing image availability and creating custom repositories in offline environments.
+       - Using Docker Compose and modifying it for local resources and services.
+       - Network configuration and troubleshooting for isolated systems.
+       - Building images with cached dependencies and setting up local mirrors for package managers.
+
 ---
