@@ -1,8 +1,8 @@
-# Common Docker Issues Troubleshooting Guide 🛠️
+# Common Docker Issues Troubleshooting Guide
 
 This guide provides solutions to some of the most common Docker issues you may encounter. Follow these steps to troubleshoot your Docker containers, images, and services effectively.
 
-## 1. Docker Daemon Not Starting ❌
+## 1. Docker Daemon Not Starting
 
 **Issue**: The Docker daemon isn't running, and you can't run Docker commands.
 
@@ -24,7 +24,7 @@ sudo systemctl start docker
 sudo journalctl -u docker.service
 ```
 
-## 2. Docker Container Fails to Start 🚫
+## 2. Docker Container Fails to Start
 
 **Issue**: Your container fails to start after running `docker run`.
 
@@ -42,7 +42,7 @@ docker ps -a
 
 Verify image compatibility (e.g., correct architecture, missing dependencies).
 
-## 3. "Port Already in Use" Error ⚠️
+## 3. "Port Already in Use" Error 
 
 **Issue**: Docker reports that a port is already in use, but you’re unsure which process is using it.
 
@@ -64,7 +64,7 @@ sudo kill <pid>
 ```
 
 Also make sure nothing is blocked inbound or outbound (based on organizational requirements) for the port in question.
-## 4. Insufficient Disk Space 🏴
+## 4. Insufficient Disk Space
 
 **Issue**: Docker container or image creation fails due to insufficient disk space.
 
@@ -85,7 +85,7 @@ docker system prune -a
 docker volume prune
 ```
 
-## 5. Network Issues Between Containers 🌐
+## 5. Network Issues Between Containers
 
 **Issue**: Containers cannot communicate with each other.
 
@@ -103,7 +103,7 @@ docker network ls
 docker network inspect <network-name>
 ```
 
-## 6. Permission Denied Errors 🔒
+## 6. Permission Denied Errors
 
 **Issue**: You receive "Permission Denied" when running Docker commands or accessing volumes.
 
@@ -117,7 +117,7 @@ sudo usermod -aG docker $USER
 - Restart your session or log out and back in.
 - Check permissions on mounted volumes and files.
 
-## 7. Docker Image Build Fails 🚧
+## 7. Docker Image Build Fails
 
 **Issue**: Docker image build fails due to errors in the `Dockerfile`.
 
@@ -131,7 +131,7 @@ docker build --no-cache -t <image-name> .
 
 Check the context (files in the build directory) for necessary files.
 
-## 8. Docker Compose Not Working 🧩
+## 8. Docker Compose Not Working
 
 **Issue**: Docker Compose isn't starting or having issues with services.
 
