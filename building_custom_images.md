@@ -1,4 +1,4 @@
-# Building Custom Docker Images 🛠️
+# Building Custom Docker Images
 
 This section covers the steps to build your own custom Docker images, starting from writing a Docker file to building and testing your image.
 
