@@ -1,4 +1,4 @@
-# Docker Basics ⚙️
+# Docker Basics
 
 This section covers the essential Docker commands and concepts to help you get started with managing containers, images, and volumes.
 
