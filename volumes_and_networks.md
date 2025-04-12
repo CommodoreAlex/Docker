@@ -1,9 +1,9 @@
-# Docker Volumes and Networks Guide 🛠️
+# Docker Volumes and Networks Guide
 
 In Docker, **volumes** and **networks** are essential components that help you manage data persistence and container communication. This guide will explain how to define and use volumes and networks in Docker and Docker Compose.
 
 **Some of this is repetitive information, serving value in segmenting this to its own file as well.**
-## Docker Volumes 📦
+## Docker Volumes
 
 Docker volumes provide a way to store data outside of containers, ensuring that data persists even if the container is stopped or removed.
 
@@ -59,7 +59,7 @@ volumes:
 - The `db_data` volume is defined in the `volumes` section at the bottom of the file.
 - The volume is mounted into the `db` service at `/var/lib/postgresql/data`, which is where PostgreSQL stores its data.
 
-## Docker Networks 🌐
+## Docker Networks
 
 Docker networks enable containers to communicate with each other. By default, Docker Compose creates a default network, but you can define custom networks for more control.
 
@@ -130,7 +130,7 @@ networks:
 - The `db` service is connected only to the `backend` network.
 - The `frontend` network can be used for services that need to interact with user-facing components (e.g., a web server or reverse proxy), while the `backend` network is for services like databases that should be isolated.
 
-## Best Practices for Volumes and Networks 📝
+## Best Practices for Volumes and Networks
 
 ### Volumes:
 
