@@ -1,8 +1,8 @@
-# # Docker Swarm Guide 🐋
+# # Docker Swarm Guide
 
 Docker Swarm is Docker's native clustering tool that enables managing multiple Docker engines as a single virtual host, providing high availability, scalability, and fault tolerance.
 
-## What is Docker Swarm? 🤔
+## What is Docker Swarm?
 
 Docker Swarm allows you to manage a cluster of Docker nodes and deploy services across them. Key features include:
 - **Service orchestration**: Automatically manages containers across nodes.
@@ -10,7 +10,7 @@ Docker Swarm allows you to manage a cluster of Docker nodes and deploy services 
 - **Scaling**: Adjust the number of replicas as needed.
 - **Load balancing**: Distributes traffic across service containers.
 
-## Docker Swarm vs Kubernetes 🤖
+## Docker Swarm vs Kubernetes
 
 - **Setup**: Docker Swarm is simpler to set up and integrates directly with Docker. Kubernetes has a steeper learning curve and requires additional configuration.
 - **Scaling**: Kubernetes offers more fine-grained control over scaling and management, while Docker Swarm is easier to scale but with fewer options.
@@ -21,7 +21,7 @@ In short, Docker Swarm is easier and quicker to set up, but Kubernetes offers mo
 
 ---
 
-## Setting Up Docker Swarm 🛠️
+## Setting Up Docker Swarm
 
 Some quick vocabulary...
 ### Worker Node 
@@ -62,7 +62,7 @@ This will list all nodes in the Swarm, along with their status and role (manager
 
 ---
 
-## Deploying Services in Docker Swarm 🖥️
+## Deploying Services in Docker Swarm 
 
 Docker Swarm uses services to run containers across your cluster. A service defines a container image, the number of replicas (containers) to run, and other configurations.
 
@@ -109,7 +109,7 @@ For example, to remove the `nginx-service`:
 docker service rm nginx-service
 ```
 
-## Docker Swarm Networking 🌐
+## Docker Swarm Networking
 
 Docker Swarm automatically sets up an internal network that allows containers within the Swarm to communicate with each other. You can also create custom networks to control communication between services.
 
@@ -137,7 +137,7 @@ For example, to deploy an NGINX service connected to the `my-overlay-network`:
 docker service create --name nginx-service --network my-overlay-network nginx
 ```
 
-## Docker Swarm Secrets 🔒
+## Docker Swarm Secrets
 
 Docker Swarm allows you to manage sensitive data, such as passwords or API keys, using **secrets**. Secrets are encrypted and only accessible by the services that require them.
 
@@ -177,7 +177,7 @@ To remove a secret:
 docker secret rm <secret-name>
 ```
 
-## Monitoring and Managing Swarm Services 📊
+## Monitoring and Managing Swarm Services
 
 You can monitor and manage services in your Swarm using several commands:
 
@@ -201,7 +201,7 @@ docker service logs <service-name>
 docker service ps <service-name>
 ```
 
-## Best Practices for Docker Swarm 📝
+## Best Practices for Docker Swarm
 
 - **High Availability**: Always have at least 3 manager nodes for fault tolerance and redundancy.
 - **Service Replication**: Use service replicas to distribute load and ensure high availability.
