@@ -1,4 +1,4 @@
-# Getting Started with Docker 🐳
+# Getting Started with Docker
 
 This guide is designed to give you a solid introduction to containerization and help you get Docker up and running on your system.
 
